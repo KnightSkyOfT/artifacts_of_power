@@ -1,3 +1,4 @@
 # Artifacts of Power initialization hook.
-# Keep this function even while empty; future artifacts can initialize
-# scoreboard objectives or other one-time datapack state here.
+
+# Heart of Aspiration cooldown, measured in ticks.
+scoreboard objectives add aop_heart_cd dummy

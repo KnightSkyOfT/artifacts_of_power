@@ -1,0 +1,20 @@
+{
+  "criteria": {
+    "use_heart": {
+      "trigger": "minecraft:using_item",
+      "conditions": {
+        "item": {
+          "items": "minecraft:heart_of_the_sea",
+          "predicates": {
+            "minecraft:custom_data": {
+              "artifact": "heart_of_aspiration"
+            }
+          }
+        }
+      }
+    }
+  },
+  "rewards": {
+    "function": "artifacts:heart/use"
+  }
+}
