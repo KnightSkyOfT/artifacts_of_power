@@ -1,0 +1,99 @@
+{
+  "description": {
+    "text": "Convergence",
+    "color": "dark_purple"
+  },
+  "supported_items": "minecraft:shears",
+  "primary_items": "minecraft:shears",
+  "weight": 1,
+  "max_level": 1,
+  "min_cost": {
+    "base": 1,
+    "per_level_above_first": 0
+  },
+  "max_cost": {
+    "base": 1,
+    "per_level_above_first": 0
+  },
+  "anvil_cost": 0,
+  "slots": [
+    "mainhand"
+  ],
+  "effects": {
+    "minecraft:post_attack": [
+      {
+        "enchanted": "attacker",
+        "affected": "victim",
+        "requirements": {
+          "condition": "minecraft:entity_properties",
+          "entity": "this",
+          "predicate": {
+            "location": {
+              "position": {
+                "y": {
+                  "min": 120.0
+                }
+              }
+            }
+          }
+        },
+        "effect": {
+          "type": "minecraft:damage_entity",
+          "damage_type": "minecraft:generic_kill",
+          "min_damage": 1000.0,
+          "max_damage": 1000.0
+        }
+      },
+      {
+        "enchanted": "attacker",
+        "affected": "victim",
+        "requirements": {
+          "condition": "minecraft:entity_properties",
+          "entity": "this",
+          "predicate": {
+            "location": {
+              "position": {
+                "y": {
+                  "max": 119.999
+                }
+              }
+            }
+          }
+        },
+        "effect": {
+          "type": "minecraft:apply_mob_effect",
+          "to_apply": "minecraft:levitation",
+          "min_duration": 1.0,
+          "max_duration": 1.0,
+          "min_amplifier": 90.0,
+          "max_amplifier": 90.0
+        }
+      },
+      {
+        "enchanted": "attacker",
+        "affected": "attacker",
+        "requirements": {
+          "condition": "minecraft:entity_properties",
+          "entity": "this",
+          "predicate": {
+            "location": {
+              "position": {
+                "y": {
+                  "max": 119.999
+                }
+              }
+            }
+          }
+        },
+        "effect": {
+          "type": "minecraft:apply_mob_effect",
+          "to_apply": "minecraft:levitation",
+          "min_duration": 1.0,
+          "max_duration": 1.0,
+          "min_amplifier": 89.0,
+          "max_amplifier": 89.0
+        }
+      }
+    ]
+  }
+}

@@ -1,0 +1,3 @@
+# Gives the executing player the Shears of Convergence.
+# Fall immunity is active only while the Shears are held in the main hand.
+give @s minecraft:shears[minecraft:item_name={text:"Shears of Convergence",color:"light_purple",bold:true,italic:false},minecraft:lore=[{text:"Below Y=120: Ascend.",color:"gray",italic:true},{text:"At Y=120 or above: Sever.",color:"dark_purple",italic:true}],minecraft:custom_data={artifact:"shears_of_convergence"},minecraft:unbreakable={},minecraft:enchantments={"artifacts:convergence":1},minecraft:attribute_modifiers=[{id:"artifacts:convergence_fall_immunity",type:"minecraft:fall_damage_multiplier",amount:-1.0,operation:"add_multiplied_total",slot:"mainhand",display:{type:"hidden"}}]] 1

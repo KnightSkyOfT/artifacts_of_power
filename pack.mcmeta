@@ -1,0 +1,13 @@
+{
+  "pack": {
+    "description": "Artifacts of Power - Java 1.21.10",
+    "min_format": [
+      88,
+      0
+    ],
+    "max_format": [
+      88,
+      0
+    ]
+  }
+}
