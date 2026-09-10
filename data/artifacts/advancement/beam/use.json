@@ -1,0 +1,20 @@
+{
+  "criteria": {
+    "use_beam": {
+      "trigger": "minecraft:using_item",
+      "conditions": {
+        "item": {
+          "items": "minecraft:shield",
+          "predicates": {
+            "minecraft:custom_data": {
+              "artifact": "directed_electron_beam"
+            }
+          }
+        }
+      }
+    }
+  },
+  "rewards": {
+    "function": "artifacts:beam/check_use"
+  }
+}
