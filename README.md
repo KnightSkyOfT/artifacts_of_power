@@ -4,6 +4,7 @@ This project is licensed under the CC-BY-NC 4.0 License - see the https://creati
 
 You are free to:
 Share — copy and redistribute the material in any medium or format
+Make content using this data-packet provided due credit is given.
 The licensor cannot revoke these freedoms as long as you follow the license terms.
 Under the following terms:
 Attribution — You must give appropriate credit, provide a link to the license, and indicate if changes were made. You may do so in any reasonable manner, but not in any way that suggests the licensor endorses you or your use.
