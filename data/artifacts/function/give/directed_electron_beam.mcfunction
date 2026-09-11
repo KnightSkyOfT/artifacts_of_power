@@ -1,4 +1,9 @@
+# Uniqueness check
 execute if score #directed_electron_beam aop_unique matches 1.. run tellraw @s [{text:"The Directed Electron Beam already exists.",color:"red"}]
 execute if score #directed_electron_beam aop_unique matches 1.. run return fail
 
+# Gives the item
 give @s minecraft:shield[minecraft:item_name={text:"Directed Electron Beam",color:"aqua",bold:true,italic:false},minecraft:lore=[{text:"Hold Right Click: Charge",color:"yellow",italic:false},{text:"Charge Time: 5 seconds",color:"gray",italic:true},{text:"Beam: 7 damage/tick for up to 6 seconds",color:"red",italic:true},{text:"Range: 9 blocks",color:"gray",italic:true},{text:"Cooldown: 90 seconds",color:"dark_gray",italic:true}],minecraft:custom_data={artifact:"directed_electron_beam"},minecraft:unbreakable={},minecraft:enchantment_glint_override=true,minecraft:damage_resistant={types:"#artifacts:artifact_item_immune"}] 1
+
+# Updates the uniqueness variables
+scoreboard players set #directed_electron_beam aop_unique 1

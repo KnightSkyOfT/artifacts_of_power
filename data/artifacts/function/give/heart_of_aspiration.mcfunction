@@ -2,3 +2,5 @@ execute if score #heart_of_aspiration aop_unique matches 1.. run tellraw @s [{te
 execute if score #heart_of_aspiration aop_unique matches 1.. run return fail
 
 give @s minecraft:heart_of_the_sea[minecraft:item_name={text:"Heart of Aspiration",color:"gold",bold:true,italic:false},minecraft:lore=[{text:"Right Click: Aspiration",color:"yellow",italic:false},{text:"Regeneration IV + Speed I for 8 seconds.",color:"gray",italic:true},{text:"Cooldown: 45 seconds.",color:"dark_gray",italic:true}],minecraft:custom_data={artifact:"heart_of_aspiration"},minecraft:max_stack_size=1,minecraft:enchantment_glint_override=true,minecraft:damage_resistant={types:"#artifacts:artifact_item_immune"},minecraft:blocks_attacks={block_delay_seconds:999999.0,disable_cooldown_scale:0.0}] 1
+
+scoreboard players set #heart_of_aspiration aop_unique 1

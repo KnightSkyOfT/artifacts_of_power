@@ -4,3 +4,5 @@ execute if score #shears_of_convergence aop_unique matches 1.. run tellraw @s [{
 execute if score #shears_of_convergence aop_unique matches 1.. run return fail
 
 give @s minecraft:shears[minecraft:item_name={text:"Shears of Convergence",color:"light_purple",bold:true,italic:false},minecraft:lore=[{text:"Below Y=120: Ascend.",color:"gray",italic:true},{text:"At Y=120 or above: Sever.",color:"dark_purple",italic:true}],minecraft:custom_data={artifact:"shears_of_convergence"},minecraft:unbreakable={},minecraft:damage_resistant={types:"#artifacts:artifact_item_immune"},minecraft:enchantments={"artifacts:convergence":1},minecraft:attribute_modifiers=[{id:"artifacts:convergence_fall_immunity",type:"minecraft:fall_damage_multiplier",amount:-1.0,operation:"add_multiplied_total",slot:"mainhand",display:{type:"hidden"}}]] 1
+
+scoreboard players set #shears_of_convergence aop_unique 1
