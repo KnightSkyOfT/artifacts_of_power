@@ -1,0 +1,20 @@
+{
+  "criteria": {
+    "use_puppet": {
+      "trigger": "minecraft:using_item",
+      "conditions": {
+        "item": {
+          "items": "minecraft:heavy_core",
+          "predicates": {
+            "minecraft:custom_data": {
+              "artifact": "golem_puppet"
+            }
+          }
+        }
+      }
+    }
+  },
+  "rewards": {
+    "function": "artifacts:golem_puppet/use"
+  }
+}
